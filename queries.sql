@@ -40,7 +40,6 @@ AND last_name LIKE 'B%';
 
 SELECT emp.emp_no, emp.last_name, emp.first_name, d.dept_name
 FROM employees AS emp
-
 	INNER JOIN dept_emp AS de
 	ON emp.emp_no = de.emp_no	
 	INNER JOIN departments AS d
@@ -52,7 +51,6 @@ WHERE d.dept_no = 'd007';
 
 SELECT emp.emp_no, emp.last_name, emp.first_name, d.dept_name
 FROM employees AS emp
-
 	INNER JOIN dept_emp AS de
 	ON emp.emp_no = de.emp_no	
 	INNER JOIN departments AS d
